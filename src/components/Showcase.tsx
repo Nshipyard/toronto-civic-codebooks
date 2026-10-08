@@ -45,7 +45,7 @@ export default function Showcase() {
           <p className="mt-3 max-w-[680px] text-[16px] leading-relaxed text-ink/70">{t.showcase.teerBody}</p>
           <div className="mt-8 space-y-3">
             {TEER_COUNTS.map(({ teer, count }) => (
-              <div key={teer} className="grid grid-cols-[220px_1fr_56px] items-center gap-4">
+              <div key={teer} className="grid grid-cols-[minmax(0,220px)_minmax(0,1fr)_auto] items-center gap-4">
                 <p className="truncate text-[14px] text-ink/70">
                   <span className="mr-2 font-mono font-semibold text-ink">TEER {teer}</span>
                   {(t.teerLabels as Record<string, string>)[teer]}

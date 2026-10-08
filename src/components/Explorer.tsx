@@ -159,7 +159,7 @@ function DetailView({ record, onClose }: { record: { table: string } & Record<st
         {rows.map(([k, v]) => (
           <div key={k} className="grid grid-cols-[160px_1fr] gap-4 border-b border-line/60 py-2.5 text-[15px] last:border-0">
             <dt className="text-ink/55">{k}</dt>
-            <dd className="font-medium">{v}</dd>
+            <dd className="min-w-0 break-words font-medium">{v}</dd>
           </div>
         ))}
       </dl>
