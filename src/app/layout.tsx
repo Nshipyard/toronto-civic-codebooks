@@ -8,7 +8,7 @@ import "./globals.css";
 import { LangProvider } from "@/i18n";
 
 export const metadata: Metadata = {
-  title: "Toronto Civic Codebooks — NOC, parking infractions, and procurement codes, resolved",
+  title: "Toronto Civic Codebooks: NOC, parking infractions, and procurement codes, resolved",
   description:
     "Reference tables for Toronto civic data: 516 NOC 2021 occupations, 195 parking infraction codes with real ticket counts, 4,909 GSIN procurement codes. Explorer, REST API, OpenAPI docs, and MCP tools. Open data, MIT licensed.",
 };
