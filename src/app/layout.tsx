@@ -7,10 +7,35 @@ import "@fontsource/inter/600.css";
 import "./globals.css";
 import { LangProvider } from "@/i18n";
 
+const SITE_URL = "https://toronto-civic-codebooks.vercel.app";
+
 export const metadata: Metadata = {
   title: "Toronto Civic Codebooks: NOC, parking infractions, and procurement codes, resolved",
   description:
     "Reference tables for Toronto civic data: 516 NOC 2021 occupations, 195 parking infraction codes with real ticket counts, 4,909 GSIN procurement codes. Explorer, REST API, OpenAPI docs, and MCP tools. Open data, MIT licensed.",
+  metadataBase: new URL(SITE_URL),
+  openGraph: {
+    title: "Toronto Civic Codebooks: NOC, parking infractions, and procurement codes, resolved",
+    description:
+      "Reference tables for Toronto civic data: 516 NOC 2021 occupations, 195 parking infraction codes with real ticket counts, 4,909 GSIN procurement codes. Explorer, REST API, OpenAPI docs, and MCP tools. Open data, MIT licensed.",
+    url: SITE_URL,
+    siteName: "Nshipyard Canada",
+    type: "website",
+    images: [
+      {
+        url: `${SITE_URL}/og-image.png`,
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Toronto Civic Codebooks: NOC, parking infractions, and procurement codes, resolved",
+    description:
+      "Reference tables for Toronto civic data: 516 NOC 2021 occupations, 195 parking infraction codes with real ticket counts, 4,909 GSIN procurement codes. Explorer, REST API, OpenAPI docs, and MCP tools. Open data, MIT licensed.",
+    images: [`${SITE_URL}/og-image.png`],
+  },
   icons: {
     icon: [
       { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
